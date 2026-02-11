@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mechanical Draftsman Assessment</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 font-sans">
+
+    <!-- INSTRUCTIONS SCREEN -->
+    <div id="instructionScreen" class="min-h-screen flex items-center justify-center bg-gray-100">
+        <div class="bg-white max-w-2xl p-10 rounded shadow">
+
+            <!-- Logo Placeholder -->
+            <div class="flex justify-center mb-6">
+            <div class="w-32 h-16 flex items-center justify-center text-xs text-gray-500">
+                <img src="fabtran-logo.png" alt="logo">
+                </div>
+            </div>
+
+            <h2 class="text-2xl font-bold mb-4 text-center text-[0a3161]">Assessment Instructions</h2>
+
+            <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+            <li>Total Questions: 20</li>
+            <li>Min 12 questions to Qualify</li>
+            <li>Total Duration: 20 Minutes</li>
+            <li>Feel free to use calculator</li>
+            <li class="text-red-600 font-bold">Googling is prohibited</li>
+            <li>Test will auto-submit when time ends</li>
+            <li class="font-bold">Do not refresh the page</li>
+            </ul>
+
+            <div class="text-center">
+            <button id="startTestBtn"
+                class="bg-[#0a3161] text-white px-8 py-3 rounded text-lg">
+                Start Test
+            </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="testContainer" class="hidden">
+        <!-- HEADER -->
+        <div class="bg-white shadow-md sticky top-0 z-50">
+            <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <!-- Logo Placeholder -->
+            <div class="flex items-center justify-center gap-3">
+                <div class="w-28 h-16 flex items-center justify-center text-xs text-gray-500">
+                <img src="fabtran-logo.png" alt="">
+                </div>
+            </div>
+
+            <div>
+                <h1 class="text-xl font-semibold">General Assessment</h1>
+                </div>
+
+            <!-- Timer -->
+            <div class="text-right">
+                <p class="text-sm text-gray-500">Time Left</p>
+                <p id="timer" class="text-2xl font-bold text-red-600">1:00</p>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="max-w-6xl mx-auto px-6 py-8">
+
+            <!-- Progress -->
+            <div class="bg-white shadow sticky top-[88px] z-40 my-2">
+            <div class="max-w-6xl mx-auto px-6 py-4">
+
+                <div class="flex justify-between mb-1">
+                <span class="text-sm font-medium text-gray-700">Progress</span>
+                <span id="progressText" class="text-sm text-gray-600"></span>
+                </div>
+
+                <div class="w-full bg-gray-300 rounded-full h-3">
+                <div id="progressBar"
+                    class="bg-[#bf0d3e] h-3 rounded-full"
+                    style="width: 0%">
+                </div>
+                </div>
+            </div>
+            </div>
+
+            <!-- Questions Container -->
+            <form id="questionForm" class="space-y-10 pt-4">
+            <!-- Questions will be injected here -->
+            </form>
+
+            <!-- Navigation -->
+            <div class="flex justify-between mt-10">
+            <button id="prevBtn"
+                class="bg-gray-400 text-white px-6 py-2 rounded disabled:opacity-50"
+                disabled>
+                Previous
+            </button>
+
+            <button id="nextBtn"
+                class="bg-blue-600 text-white px-6 py-2 rounded">
+                Next
+            </button>
+            </div>
+
+        </div>
+    </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>

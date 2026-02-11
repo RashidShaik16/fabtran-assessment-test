@@ -4,7 +4,7 @@
 
 
 const QUESTIONS_PER_PAGE = 5;
-const TOTAL_TIME = 1 * 60; // 20 minutes in seconds
+const TOTAL_TIME = 15 * 60; // 20 minutes in seconds
 
 import {data} from "./data.js"
 

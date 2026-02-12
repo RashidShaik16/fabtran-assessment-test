@@ -50,7 +50,7 @@ export const data = [
 
   {
     id: 7,
-    question: "What is the weight (in pounds) of a sheet whose sizes are 25\" x 40\" x 0.25\" thickness? Density = 0.2836 lb/in³",
+    question: "What is the weight (in pounds) of a rectangle sheet whose sizes are 25\" x 40\" x 0.25\" thickness? Density = 0.2836 lb/in³",
     image: "",
     options: ["70.90 lbs", "71.00 lbs", "69.50 lbs", "72.25 lbs"],
     answer: 0
@@ -68,8 +68,8 @@ export const data = [
     id: 9,
     question: "What type of material is A36 and A572 GR.50?",
     image: "",
-    options: ["Carbon Steel", "Stainless Steel", "Aluminum", "Alloy"],
-    answer: 0
+    options: ["Stainless Steel", "Aluminum", "Alloy", "Carbon Steel"],
+    answer: 3
   },
 
   {
